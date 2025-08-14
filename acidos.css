@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'monteserrat', sans-serif;
+    
+}
+
+
+:root {
+    --dark-purple: #0D0614;
+    --medium-purple: #2C1344;
+    --normal-purple: #4A2073;
+    --highlight-purple: #522780;
+    --light-purle: #C9BCD8;
+    --yellow: #FEC800;
+}
+
+body {
+    background: linear-gradient(to bottom, #4A2073, #2C1344, #0D0614);
+    min-height: 100vh;
+    color: white;
+    line-height: 1.6;
+   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+
+}
+
+img {
+    width: 10rem;
+
+}
+
+.logo{
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    /* espaçamento entre os itens do menu */
+}
+
+nav h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+nav h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+nav h3:hover{
+    color: var(--yellow);
+    transition-duration: .6s;
+    cursor: pointer;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.primeira_section{
+    display: flex;
+    flex-direction: column;
+
+    .acidos{
+        margin: 3rem 0 3rem 10rem;
+    }
+
+    .acidos h1{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .acidos p{
+        margin-left: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .classificacao_dos_acidos{
+        margin: 2rem 0 3rem 12rem;
+
+        h2{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .numero_de_hidrogenio h3{
+        margin-bottom: 2rem;
+    }
+}
+
