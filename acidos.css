@@ -28,8 +28,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 2rem;
-
+    padding: 1rem 4rem; /* Ajuste conforme necessidade */
+    background-color: transparent;
 }
 
 img {
@@ -38,25 +38,31 @@ img {
 }
 
 .logo{
-    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 nav {
     display: flex;
-    gap: 1.5rem;
-    /* espaçamento entre os itens do menu */
+    align-items: center;
+    gap: 2rem;
 }
 
 nav h3 {
     font-size: 1rem;
-    margin: 0;
+    transform: scale(1.1);
+   
+}
+.about-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-
-nav h3 {
-    font-size: 1rem;
-    margin: 0;
+.about-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
+
 
 nav h3:hover{
     color: var(--yellow);
@@ -67,6 +73,10 @@ nav h3:hover{
 nav a{
     text-decoration: none;
     color: #fff;
+}
+
+nav img{
+    width: 3rem;
 }
 
 .primeira_section{
