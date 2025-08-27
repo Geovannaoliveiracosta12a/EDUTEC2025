@@ -1,12 +1,10 @@
-bases
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bases.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -18,19 +16,31 @@ bases
 <body>
     <header>
         <div class="logo">
-            <img src="../images/logoo.png" alt="logo inorga">
+            <img src="../images/logo.png" alt="logo inorga">
         </div>
-        <nav>
+        <ul>
+            <li><a href="#">Introdução</a></li>
+            <li><a href="#">Video-aulas</a></li>
+            <li><a href="#">Jogos</a></li>
+            <li>
+                <a href="#">Conteúdo</a>
 
-            <a href="./basicos/basico.html">
-                <h3>Conteúdo</h3>
-            </a>
-            <h3>Introdução</h3>
-            <h3>Vídeo-aulas</h3>
-            <h3>Jogos</h3>
-            <h3>Sobre nós</h3>
-        </nav>
+                <ul class="dropdown">
+                    <li><a href="#">Ácidos</a></li>
+                    <li><a href="./bases_/index.html">Bases</a></li>
+                    <li><a href="#">Sais</a></li>
+                    <li><a href="#">Óxidos</a></li>
+                    <li><a href="#">Bal.</a></li>
+                </ul>
+            </li>
+
+            <div class="about">
+                <img src="../images/about us.png" alt="Sobre nós" class="about-img">
+            </div>
+
+            </nav>
     </header>
+
 
     <main>
         <div class="primeira_div">
@@ -100,6 +110,130 @@ bases
 
             <p>Praticamente insolúveis: demais bases.
                 Exemplos: AgOH e Al(OH)3.</p>
+        </div>
+
+        <div class="sexta_div">
+            <h2>Nomenclatura das Bases</h2>
+
+            <p>A fórmula geral de uma base pode ser descrita como B₁⁺ʸOHᵧ⁻¹
+                ,
+                onde B representa o radical positivo que compõe a base e y é a carga que determina o número de
+                hidroxilas.
+
+                A nomenclatura para bases com carga fixa é dada por:</p>
+        </div>
+
+        <div class="setima_div">
+            <h2>Bases com carga fixa</h2>
+            <h3>Hidróxido + nome do cátion</h3>
+
+            <div class="tabela-container">
+                <div class="titulo"><strong>Bases com carga fixa</strong></div>
+                <div class="subtitulo">Hidróxido + nome do cátion</div>
+
+                <table>
+                    <tr>
+                        <th>Grupo</th>
+                        <th>Nome</th>
+                        <th>Fórmula</th>
+                    </tr>
+                    <tr>
+                        <td>Metais alcalinos</td>
+                        <td>Hidróxido de lítio</td>
+                        <td>LiOH</td>
+                    </tr>
+                    <tr>
+                        <td>Metais alcalinos terrosos</td>
+                        <td>Hidróxido de magnésio</td>
+                        <td>Mg(OH)₂</td>
+                    </tr>
+                    <tr>
+                        <td>Prata</td>
+                        <td>Hidróxido de prata</td>
+                        <td>AgOH</td>
+                    </tr>
+                    <tr>
+                        <td>Zinco</td>
+                        <td>Hidróxido de zinco</td>
+                        <td>Zn(OH)₂</td>
+                    </tr>
+                    <tr>
+                        <td>Alumínio</td>
+                        <td>Hidróxido de alumínio</td>
+                        <td>Al(OH)₃</td>
+                    </tr>
+                </table>
+
+                <p>Quando a base tem carga variável a nomenclatura pode ser de duas formas:</p>
+            </div>
+        </div>
+
+        <div class="oitava_div">
+            <h2>Bases com carga Fixa</h2>
+            <p><strong>Hidróxido de + nome do cátion + algarismo romano indicando a carga do cátion
+                </strong></p>
+
+            <p><strong>Hidróxido + nome do cátion { ico – maior Nox oso – menor Nox }
+                </strong></p>
+
+            <div class="tabela2-container">
+                <div class="titulo">Bases com carga fixa</div>
+                <div class="subtitulo">
+                    Hidróxido de + nome do cátion + algarismo romano indicando a carga do cátion<br>
+                    Hidróxido + nome do cátion { ico – maior Nox, oso – menor Nox }
+                </div>
+
+                <table>
+                    <tr>
+                        <td class="grupo" rowspan="2">Cobre</td>
+                        <td>Cu<sup>+</sup></td>
+                        <td>Hidróxido cuproso</td>
+                        <td>CuOH</td>
+                    </tr>
+                    <tr>
+                        <td>Cu<sup>2+</sup></td>
+                        <td>Hidróxido de cobre II</td>
+                        <td>Cu(OH)₂</td>
+                    </tr>
+                    <tr>
+                        <td class="grupo" rowspan="2"></td>
+                        <td>Fe<sup>2+</sup></td>
+                        <td>Hidróxido de ferro II</td>
+                        <td>Fe(OH)₂</td>
+                    </tr>
+                    <tr>
+                        <td>Fe<sup>3+</sup></td>
+                        <td>Hidróxido de ferro III</td>
+                        <td>Fe(OH)₃</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="nona_div">
+            <h2>Características das Bases</h2>
+            <ul>
+                <li>A maioria das bases são insolúveis em água.</li>
+                <li>Conduzem corrente elétrica em solução aquosa.</li>
+                <li>São escorregadias.</li>
+                <li>Reagem com ácido formando sal e água como produtos.</li>
+                <li>Alteram para uma cor específica os indiciadores ácido-base (papel de tornassol vermelho fica azul).
+                </li>
+            </ul>
+
+            <img src="../images/nuvem base.png" alt="">
+        </div>
+
+        <div class="decima_div">
+            <h2>Principais Bases</h2>
+
+            <p>As bases são muito utilizadas em produtos de limpeza e também em processos das indústrias químicas.
+                <br>
+                Exemplos: hidróxido de sódio (NaOH), hidróxido de magnésio (Mg(OH)2), hidróxido de amônio (NH4OH),
+                hidróxido de alumínio (Al(OH)3) e hidróxido de cálcio (Ca(OH)2).
+            </p>
+
+            <img src="../images/Group 129.png" alt="">
         </div>
         </section>
     </main>
