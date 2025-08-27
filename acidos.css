@@ -12,6 +12,7 @@
     --medium-purple: #2C1344;
     --normal-purple: #4A2073;
     --highlight-purple: #522780;
+    --highlight-purple-opacity: rgba(84, 41, 130, 0.5);
     --light-purle: #C9BCD8;
     --yellow: #FEC800;
 }
@@ -20,9 +21,7 @@ body {
     background: linear-gradient(to bottom, #4A2073, #2C1344, #0D0614);
     min-height: 100vh;
     color: white;
-    line-height: 1.6;
-
-   
+    line-height: 1.6; 
 
 }
 
@@ -31,7 +30,6 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 4rem;
-    /* Ajuste conforme necessidade */
     background-color: transparent;
 }
 
@@ -46,20 +44,15 @@ img {
     gap: 1rem;
 }
 
-nav {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
-
-nav h3 {
-    font-size: 1rem;
-    transform: scale(1.1);
-
-}
-
 .about-img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 4rem;
+    margin-left: 40rem;
+    margin-top: -5rem;
+}
+
+.about{
+    margin-top: -1rem;
 }
 
 .about-img:hover {
@@ -67,20 +60,44 @@ nav h3 {
     cursor: pointer;
 }
 
-
-nav h3:hover {
-    color: var(--yellow);
-    transition-duration: .6s;
-    cursor: pointer;
+ul{
+    list-style-type: none;
 }
 
-nav a {
-    text-decoration: none;
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 1.25rem 1.5rem;
     color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    
 }
 
-nav img {
-    width: 3rem;
+ul li ul.dropdown li{
+    display: block;
+    background: var(--highlight-purple-opacity);
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    color: var(--yellow);
+    transition: .3s;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
 }
 
 .primeira_section {
@@ -261,8 +278,7 @@ nav img {
     max-width: 100%;
     height: auto;
     margin-right: 10rem;
-    margin-top: -3rem;
-    border-radius: 2rem;
+    margin-top: -4rem;
 }
 
 /* Bloco de Oxiácidos com imagem amarela à direita */
