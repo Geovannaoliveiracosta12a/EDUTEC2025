@@ -160,6 +160,59 @@ ul li:hover ul.dropdown{
     }
 }
 
+.terceira_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .quanto_maior{
+        margin: 7rem 0 2rem 0;
+        font-size: 1.5rem;
+
+        span{
+            color: var(--yellow);
+        }
+    }
+
+    .formula{
+        padding: 2rem;
+        background: var(--highlight-purple);
+        border-radius: 2rem;
+        font-size: 1.5rem;
+
+        hr{
+            border: none;
+            height: .15rem;
+            background-color: var(--medium-purple);
+        }
+    }
+
+    .formula{
+        transition: all 0.5s ease-in-out; /* Transição aqui */
+        box-shadow: none; /* define sombra inicial */
+    }
+
+    .formula:hover{
+        padding: 2rem;
+        background: var(--light-purle);
+        border-radius: .5rem;
+        font-size: 1.5rem;
+        transition: .7s;
+        color: black;
+        transform: scale(1.05); /* aumenta o tamanho */
+        box-shadow: 0 0 1rem var(--dark-purple); /* sombra branca envolta */
+        transition: all 0.5s ease-in-out;
+
+        hr{
+            border: none;
+            height: .15rem;
+            background-color: var(--highlight-purple);
+           
+        }
+    }
+}
+
 
 
 
