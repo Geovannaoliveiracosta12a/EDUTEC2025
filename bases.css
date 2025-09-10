@@ -1,0 +1,569 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'monteserrat', sans-serif;
+
+}
+
+
+:root {
+    --dark-purple: #0D0614;
+    --medium-purple: #2C1344;
+    --normal-purple: #4A2073;
+    --highlight-purple: #522780;
+    --highlight-purple-opacity: rgba(84, 41, 130, 0.5);
+    --light-purle: #C9BCD8;
+    --yellow: #FEC800;
+}
+
+body {
+    background: linear-gradient(to bottom, #4A2073, #2C1344, #0D0614);
+    min-height: 100vh;
+    color: white;
+    line-height: 1.6;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: transparent;
+}
+
+img {
+    width: 10rem;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 4rem;
+    margin-left: 40rem;
+    margin-top: -5rem;
+}
+
+.about {
+    margin-top: -1rem;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+ul li ul.dropdown li {
+    display: block;
+    background: var(--highlight-purple-opacity);
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    color: var(--yellow);
+    transition: .3s;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+.primeira_div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* alinhamento à esquerda */
+    padding: 3rem 4rem; /* espaçamento interno */
+    max-width: 90vw;
+    margin: 0 auto; /* centraliza horizontalmente */
+    color: white; /* para garantir a cor do texto */
+}
+
+.primeira_div h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    /* alinhado à esquerda por padrão */
+}
+
+.primeira_div p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.primeira_div h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.segunda_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
+    width: 100%;
+    max-width: 90vw;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+    flex-wrap: nowrap; /* mantém lado a lado */
+}
+
+/* Texto à esquerda */
+.numero_de_hidroxilas {
+    flex: 1;
+    color: white;
+    max-width: 30rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+/* Caixa roxa com borda amarela arredondada à direita */
+.caracteristicas_hidroxilas {
+    flex: 1;
+    background: var(--highlight-purple);
+    border-radius: 3rem;
+    border: 2rem solid var(--yellow);
+    padding: 2rem 4rem;
+    width: 40rem;
+    height: auto; /* para altura automática conforme conteúdo */
+    font-size: 1.5rem;
+    color: white;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+
+}
+
+.caracteristicas_hidroxilas span {
+    font-weight: 700;
+}
+
+.caracteristicas_hidroxilas strong {
+    font-weight: 700;
+}
+
+
+.caracteristicas_hidroxilas {
+    padding: 2rem 4rem;
+    background: var(--highlight-purple);
+    border-radius: 3rem;
+    border: 2rem solid var(--yellow);
+    width: 40rem;
+    height: 40rem;
+    font-size: 1.5rem;
+    margin: 0;
+
+    p {
+        margin-top: 2rem;
+        text-align: start;
+    }
+}
+
+.numero_de_hidroxilas {
+    margin-left: 10rem;
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.numero_de_hidroxilas {
+    width: 40rem;
+}
+
+.terceira_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .quanto_maior {
+        margin: 7rem 0 2rem 0;
+        font-size: 1.5rem;
+
+        span {
+            color: var(--yellow);
+        }
+    }
+
+    .formula {
+        padding: 2rem;
+        background: var(--highlight-purple);
+        border-radius: 2rem;
+        font-size: 1.5rem;
+
+        hr {
+            border: none;
+            height: .15rem;
+            background-color: var(--medium-purple);
+        }
+    }
+
+    .formula {
+        transition: all 0.5s ease-in-out;
+        /* Transição aqui */
+        box-shadow: none;
+        /* define sombra inicial */
+    }
+
+    .formula:hover {
+        padding: 2rem;
+        background: var(--light-purle);
+        border-radius: .5rem;
+        font-size: 1.5rem;
+        transition: .7s;
+        color: black;
+        transform: scale(1.05);
+        /* aumenta o tamanho */
+        box-shadow: 0 0 1rem var(--dark-purple);
+        /* sombra branca envolta */
+        transition: all 0.5s ease-in-out;
+
+        hr {
+            border: none;
+            height: .15rem;
+            background-color: var(--highlight-purple);
+
+        }
+    }
+}
+
+.quarta_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: var(--highlight-purple);
+    border-radius: 2rem;
+    border: 2rem solid var(--yellow);
+    width: 60rem;
+    height: 34rem;
+
+    margin: auto;
+    margin-top: 3rem;
+
+    h2 {
+        text-align: start;
+        width: 100%;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+
+
+    }
+
+    p {
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    li {
+        font-size: 1.5rem;
+        margin-left: 5rem;
+        margin-bottom: 1rem;
+    }
+
+    .fracos {
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.quinta_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    background: var(--highlight-purple);
+    border-radius: 2rem;
+    border: 2rem solid var(--yellow);
+    width: 50rem;
+    height: 30rem;
+    margin-top: 8rem;
+
+    margin: 4rem auto;
+
+    h2 {
+        margin-right: auto;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+
+    p {
+        margin-right: auto;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}
+
+.sexta_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 2rem;
+        margin-top: 4rem;
+    }
+
+    p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+.setima_div {
+    background-color: #f2bd33;
+    /* amarelo da borda */
+    padding: 1rem;
+    border-radius: 16px;
+    width: fit-content;
+    margin-top: 3rem;
+    margin: 3rem auto;
+
+}
+
+.tabela-container {
+    background-color: #522780;
+    /* roxo */
+    color: white;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+
+}
+
+.tabela-container h2,
+.titulo {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.tabela-container h3,
+.subtitulo {
+    margin: 0 0 2rem 0;
+    font-size: 1.6rem;
+    font-weight: 1.5rem;
+}
+
+/* tabela sem bordas, só alinhamento */
+.tabela-container table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+
+}
+
+.tabela-container th {
+    display: none;
+    /* tira o cabeçalho */
+}
+
+.tabela-container td {
+    padding: 0.4rem 3rem 0.4rem 0;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.tabela-container td {
+    padding: 0.6rem 2rem;
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tabela-container tr:last-child td {
+    border-bottom: none;
+}
+
+.paragrafo_tabelas,
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.oitava_div {
+    background-color: #f2bd33;
+    padding: 1rem;
+    border-radius: 16px;
+    max-width: 90vw; /* largura máxima responsiva */
+    width: 60rem;     /* largura fixa que funciona bem */
+    margin: 3rem auto; /* centraliza com espaço em cima e embaixo */
+    box-sizing: border-box; /* para incluir padding na largura */
+}
+
+.oitava_div .tabela2-container {
+    background-color: #522780;
+    color: white;
+    padding: 2rem 3rem; /* reduzi o padding lateral para evitar muito espaçamento */
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    text-align: left; /* título e subtítulo alinhados à esquerda */
+}
+
+.oitava_div .tabela2-container .titulo {
+    margin: 0 0 1rem 0; /* espaço só embaixo */
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.oitava_div .tabela2-container .subtitulo {
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+    text-align: left;
+}
+
+.oitava_div .tabela2-container table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    width: 100%; /* para tabela ocupar toda largura da div */
+}
+
+.oitava_div .tabela2-container table td {
+    padding: 0.6rem 1rem; /* padding equilibrado */
+    border: none;
+    text-align: left;
+    vertical-align: top;
+}
+
+.oitava_div .tabela2-container table .grupo {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+
+.nona_div {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin-left: 20rem;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    li {
+        margin-left: 20rem;
+        font-size: 1.5rem;
+    }
+}
+
+.img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img img {
+    width: 400px;
+    height: auto;
+    margin-right: 20rem;
+    margin-bottom: 3rem;
+    margin-top: -15rem;
+
+}
+
+.decima_div {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        margin-top: 4rem;
+        font-size: 2rem;
+        margin-left: 20rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+    
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.imagem-direita-grande {
+    width: 500px;
+    height: auto;
+    margin-bottom: 2rem;
+    
+    
+}
+
+
+button {
+    background-color: var(--yellow);
+    /* Amarelo */
+    color: #000;
+    /* Texto preto */
+    border: none;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    /* Alinha à direita */
+    margin: 2rem;
+
+    width: 8rem;
+    color: #FFf;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10rem;
+    margin-top: -5rem;
+}

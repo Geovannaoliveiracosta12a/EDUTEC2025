@@ -1,0 +1,332 @@
+* {
+
+    margin: 0;
+  
+    padding: 0;
+  
+    box-sizing: border-box;
+    font-family: 'montserrat';
+  
+  }
+  :root {
+    --dark-purple: #0D0614;
+    --medium-purple: #2C1344;
+    --normal-purple: #4A2073;
+    --highlight-purple: #522780;
+    --highlight-purple-opacity: rgba(84, 41, 130, 0.5);
+    --light-purle: #C9BCD8;
+    --yellow: #FEC800;
+}
+  
+  
+  
+  
+  body {
+  
+    background-image: url("./images/image1.jpg");
+  
+    background-repeat: no-repeat;
+  
+    background-position: center;
+  
+    background-size: cover;
+  
+    overflow-x: hidden;
+  
+    overflow-y: hidden;
+  
+    max-width: 100%;
+  
+  }
+
+ 
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: transparent;
+}
+
+img {
+    width: 10rem;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 4rem;
+    margin-left: 40rem;
+    margin-top: -5rem;
+}
+
+.about{
+    margin-top: -1rem;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 1.25rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+ul li ul.dropdown li{
+    display: block;
+    background: var(--highlight-purple-opacity);
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    color: #FEC800;
+    transition: .3s;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+  .Cor_de_fundo {
+  
+    background-image: linear-gradient(to top, #4C2176, #00000000);
+  
+    height: 50rem;
+  
+    width: 100vw;
+  
+  }
+  
+
+  
+  
+  .apresentacao {
+  
+    color: #FFFFFF;
+  
+    text-align: center;
+  
+    margin-left: 2rem;
+  
+    margin-top: 6rem;
+  
+  }
+  
+  
+  
+  
+  
+  .h2 {
+  
+    font-size: 2rem;
+  
+    font-family: "Montserrat", sans-serif;
+  
+    font-weight: 600;
+  
+    color: white;
+  
+  }
+  
+  
+  
+  
+  
+  .h1 {
+  
+    font-size: 3rem;
+  
+    font-family: "Oswald", sans-serif;
+  
+    font-weight: 400;
+  
+  }
+  
+  
+  
+  
+  
+  .h3 {
+  
+    font-size: 1rem;
+  
+    font-family: "Montserrat Alternates", sans-serif;
+  
+    font-weight: 300;
+  
+  }
+  
+  
+  
+  
+  
+  .alinhamento1 {
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+    align-items: center;
+  
+    flex-wrap: wrap;
+  
+  }
+  
+  
+  
+  
+  
+  .Todos_os_elementos {
+  
+    display: flex;
+  
+    gap: 1rem;
+  
+    margin-bottom: 5rem;
+  
+    margin-top: 9rem;
+  
+    margin-left: 20rem;
+  
+    flex-wrap: wrap;
+  
+   
+  
+  }
+  
+  
+  
+  
+  
+  .Camada_escura {
+  
+    background-color: #2F1745;
+  
+    border-radius: 1rem;
+  
+    box-sizing: border-box;
+  
+    display: flex;
+  
+    width: 15rem;
+  
+    height: 20rem;
+  
+  }
+  
+  
+  
+  
+  
+  .Camada_escura:hover {
+  
+    background-color: #FEC800;
+  
+    cursor: pointer;
+  
+  }
+  
+  
+  
+  
+  
+  .Camada_amarela {
+  
+    background-color: #FEC800;
+  
+    border-radius: 1rem;
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    align-items: center;
+  
+    margin: 1rem 0 1rem 1rem;
+  
+    width: 13rem;
+  
+    height: 18rem;
+  
+    padding: 1rem;
+  
+    box-sizing: border-box;
+  
+  }
+  
+  
+  
+  
+  
+  .Imagens {
+  
+    width: 10rem;
+  
+    height: 10rem;
+  
+    object-fit: contain;
+  
+    margin-bottom: 0.8rem;
+  
+  }
+  
+  
+  
+  
+  
+  .Camada_amarela button {
+  
+    background-color: #522780;
+  
+    border-radius: 1rem;
+  
+    cursor: pointer;
+  
+    font-family: "Montserrat", sans-serif;
+  
+    font-weight: bold;
+  
+    font-size: 1rem;
+  
+    color: white;
+  
+    border: none;
+  
+    width: 5rem;
+  
+    height: 2rem;
+  
+    align-self: center;
+  
+    margin-top: 2rem;
+  
+  }

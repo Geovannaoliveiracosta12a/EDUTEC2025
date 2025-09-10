@@ -1,0 +1,411 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  background: linear-gradient(to bottom, #4a2073, #2c1344, #0d0614);
+
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-size: cover;
+
+  font-family: Arial, sans-serif;
+
+  overflow-x: hidden;
+
+  overflow-y: auto;
+
+}
+
+
+
+/* Container principal centralizado */
+
+.container {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 2rem;
+
+  padding: 2rem;
+
+  text-align: center;
+
+}
+
+
+
+/* Logo */
+
+.logo {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 1rem;
+
+}
+
+
+
+.logo img {
+
+  width: 10rem;
+
+  height: 3rem;
+
+}
+
+
+
+/* Títulos */
+
+.h1 {
+
+  font-family: "Montserrat", sans-serif;
+
+  color: white;
+
+  font-size: 2.5rem;
+
+}
+
+
+
+h2 {
+
+  font-family: 'Montserrat', sans-serif;
+
+  color: white;
+
+  font-size: 2rem;
+
+  margin-top: 5rem;
+
+}
+
+
+
+.texto-h2 {
+
+  font-family: 'Montserrat', sans-serif;
+
+  color: white;
+
+  max-width: 100%;
+
+}
+
+
+
+/* Parágrafos */
+
+.paragrafo {
+
+  color: #FFFFFF;
+
+  font-size: 1rem;
+
+  margin-top: 2rem;
+
+}
+
+
+
+.paragrafoamarelo {
+
+  font-family: 'Montserrat', sans-serif;
+
+  color: white;
+
+  font-size: 0.7rem;
+
+  margin-top: 3rem;
+
+}
+
+
+
+.padrao2 {
+
+  color: #FFFFFF;
+
+  font-size: 2rem;
+
+}
+
+
+
+.padrao3 {
+
+  color: #FFFFFF;
+
+  font-size: 1rem;
+
+}
+
+
+
+.regras {
+
+  color: #FEC800;
+
+  font-size: 2rem;
+
+  margin-top: 5rem;
+
+}
+
+
+
+.p {
+
+  color: #FFFFFF;
+
+  font-size: 1.5rem;
+
+  margin-top: 2rem;
+
+  gap: 1rem;
+
+}
+
+
+
+.destaque {
+
+  color: #FEC800;
+
+}
+
+
+
+/* Bloco amarelo */
+
+.amarela {
+
+  background-color: #F2BD33;
+
+  border-radius: 1rem;
+
+  height: 3rem;
+
+  width: 24rem;
+
+  text-align: center;
+
+  line-height: 3rem;
+
+}
+
+
+
+/* Tabela */
+
+.tabela {
+
+  width: 40rem;
+
+  height: 30rem;
+
+  border: 2rem solid #81689b;
+
+  border-radius: 1rem;
+
+  background-color: #81689b;
+
+  max-width: 100%;
+
+}
+
+
+
+/* Borda roxa */
+
+.borda_roxa {
+
+  padding: 0.3rem 0.9rem;
+
+  background: #4a2073;
+
+  border-radius: 4rem;
+
+  border: 2.5rem solid #F2BD33;
+
+  width: 40rem;
+
+  height: 30rem;
+
+  max-width: 100%;
+
+}
+
+
+
+/* Botão de dúvidas */
+
+.btn-duvidas {
+
+  background-color: #FFC700;
+
+  color: #31174D;
+
+  padding: 15px 30px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  font-size: 1.2rem;
+
+  cursor: pointer;
+
+  transition: transform 0.2s;
+
+  display: block;
+
+  margin: 3rem auto;
+
+}
+
+
+
+.btn-duvidas:hover {
+
+  transform: scale(1.05);
+
+}
+
+
+
+/* Popup */
+
+.popup {
+
+  position: fixed;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%) scale(0);
+
+  background-color: #31174D;
+
+  color: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  width: 300px;
+
+  max-width: 90%;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  transition: transform 0.3s ease-in-out;
+
+  z-index: 1000;
+
+  border: 1rem solid #FFC700;
+
+}
+
+
+
+.popup.show {
+
+  transform: translate(-50%, -50%) scale(1);
+
+}
+
+
+
+.popup h2 {
+
+  margin-top: 0;
+
+  font-size: 2rem;
+
+  color: #FFC700;
+
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+
+
+.popup p {
+
+  font-size: 1rem;
+
+  line-height: 1.4;
+
+}
+
+
+
+/* Botão fechar */
+
+.popup .close-btn {
+
+  position: absolute;
+
+  bottom: 15px;
+
+  right: 15px;
+
+  background: none;
+
+  border: 2px solid #FFC700;
+
+  border-radius: 50%;
+
+  width: 25px;
+
+  height: 25px;
+
+  color: #FFC700;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  text-align: center;
+
+  line-height: 20px;
+
+}
+
+
+
+/* Ícone seta */
+
+#seta {
+
+  width: 2rem;
+
+  display: block;
+
+  margin: 0 auto;
+
+}
