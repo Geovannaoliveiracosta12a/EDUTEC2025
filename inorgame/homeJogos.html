@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home de Jogos</title>
     <link rel="stylesheet" href="homeJogos.css">
 </head>
+
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo-container">
-            
-            <a href="../../../index.html"><img src="./assets/logo clara (1).png" alt="Logo Inorga" class="logo" id="abrirLogoPopup"></a>
-        </div>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="./capa.html">
+                    <img src="../images/logo.png" alt="logo inorga">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#">Introdução</a></li>
+                <li><a href="#">Video-aulas</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li>
+                    <a href="#">Conteúdo</a>
 
-        <!-- MENU PRINCIPAL -->
-        <ul class="menu">
-            <li><a href="#">Introdução</a></li>
-            <li><a href="#">Video-aulas</a></li>
-            <li><a href="#">Jogos</a></li>
-            <li>
-                <a href="#">Conteúdo ▾</a>
-                <ul class="dropdown">
-                    <li><a href="#">Ácidos</a></li>
-                    <li><a href="./bases_/index.html">Bases</a></li>
-                    <li><a href="#">Sais</a></li>
-                    <li><a href="#">Óxidos</a></li>
-                    <li><a href="./bal/bal.html">Bal.</a></li>
-                </ul>
-            </li>
-        </ul>
+                    <ul class="dropdown">
+                        <li><a href="../acidos.html">Ácidos</a></li>
+                        <li><a href="../bases.html">Bases</a></li>
+                        <li><a href="#">Sais</a></li>
+                        <li><a href="../oxidos.html">Óxidos</a></li>
+                        <li><a href="../bal.html">Bal.</a></li>
+                    </ul>
+                </li>
 
-        <!-- ABOUT US -->
-        <div class="about">
-            <img src="./assets/quem somos.png" alt="Sobre nós" class="about-img">
-        </div>
-    </nav>
+                <div class="about">
+                    <img src="../images/about us.png" alt="Sobre nós" class="about-img">
+                </div>
+        </nav>
+    </header>
 
     <!-- POPUP LOGO INORGA -->
     <div id="popup-logo" class="popup">
@@ -58,4 +60,5 @@
 
     <script src="./homeJogos.js"></script>
 </body>
+
 </html>

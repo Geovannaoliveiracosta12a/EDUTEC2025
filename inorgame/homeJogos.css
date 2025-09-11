@@ -48,31 +48,24 @@ body::before {
 }
 
 /* ================= NAVBAR ================= */
-.navbar {
-    width: 100%;
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background: none; /* transparente */
+    padding: 1rem 4rem;
+    background-color: transparent;
+    
 }
 
-/* Logo */
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+img {
+    width: 10rem;
+
 }
 
 .logo {
-    height: 62.94px;
-    width: 229px;
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .about-img {
@@ -91,13 +84,17 @@ body::before {
     cursor: pointer;
 }
 
+
+
 ul{
     list-style-type: none;
+   
 }
 
 ul li{
     display: inline-block;
     position: relative;
+    
 }
 
 ul li a{
@@ -107,12 +104,14 @@ ul li a{
     text-decoration: none;
     text-align: center;
     font-size: 1.5rem;
+
     
 }
 
 ul li ul.dropdown li{
     display: block;
     background: var(--highlight-purple-opacity);
+         
 }
 
 ul li ul.dropdown{
@@ -130,7 +129,6 @@ ul li a:hover{
 ul li:hover ul.dropdown{
     display: block;
 }
-
 /* ================= POPUP ================= */
 .popup {
     display: none;
