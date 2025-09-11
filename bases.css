@@ -131,7 +131,7 @@ ul li:hover ul.dropdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 8rem;
     margin-top: 5rem;
     width: 100%;
     max-width: 90vw;
@@ -147,65 +147,19 @@ ul li:hover ul.dropdown {
     max-width: 30rem;
     font-size: 1.5rem;
     line-height: 1.4;
+   
+}
+
+.monobases{
+    width: 50rem;
+    height: auto;
+    
 }
 
 /* Caixa roxa com borda amarela arredondada à direita */
-.caracteristicas_hidroxilas {
-    flex: 1;
-    background: var(--highlight-purple);
-    border-radius: 3rem;
-    border: 2rem solid var(--yellow);
-    padding: 2rem 4rem;
-    width: 40rem;
-    height: auto; /* para altura automática conforme conteúdo */
-    font-size: 1.5rem;
-    color: white;
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-
-}
-
-.caracteristicas_hidroxilas span {
-    font-weight: 700;
-}
-
-.caracteristicas_hidroxilas strong {
-    font-weight: 700;
-}
 
 
-.caracteristicas_hidroxilas {
-    padding: 2rem 4rem;
-    background: var(--highlight-purple);
-    border-radius: 3rem;
-    border: 2rem solid var(--yellow);
-    width: 40rem;
-    height: 40rem;
-    font-size: 1.5rem;
-    margin: 0;
 
-    p {
-        margin-top: 2rem;
-        text-align: start;
-    }
-}
-
-.numero_de_hidroxilas {
-    margin-left: 10rem;
-
-    h3 {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
-}
-
-.numero_de_hidroxilas {
-    width: 40rem;
-}
 
 .terceira_div {
     display: flex;
