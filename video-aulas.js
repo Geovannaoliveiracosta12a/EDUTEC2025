@@ -246,7 +246,7 @@ const  videos = {
 
       const x = e.pageX - carrossel.offsetLeft;
 
-      const walk = (x - startX) * 1.5; // velocidade do scroll ao arrastar
+      const walk = (x - startX) * 1.5; 
 
       carrossel.scrollLeft = scrollLeft - walk;
 
@@ -255,8 +255,6 @@ const  videos = {
  
 
  
-
-    // Suporte a toque mobile
 
     carrossel.addEventListener('touchstart', (e) => {
 

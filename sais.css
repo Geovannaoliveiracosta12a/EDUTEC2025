@@ -31,7 +31,7 @@ header {
     background-color: transparent;
 }
 
-.logo {
+.logo img {
     width: 10rem;
 
 }
@@ -173,19 +173,28 @@ ul li:hover ul.dropdown{
     margin-bottom: 4rem;
   }
 
-.botao_amarelo {
-    background-color: #FEC800;
-    border-radius: 0.1rem;
-    font-weight: bold;
-    color: #FFFFFF;
-    width: 4rem;
-    height: 1.5rem;
+button {
+    background-color: #F2BD33;
+    
+    color: #000;
+    
     border: none;
-     margin-bottom: 1rem;
-     margin-left: 100rem;
-     cursor: pointer;
-}
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    float: right;
   
+    margin: 2rem;
+
+    width: 8rem;
+    color: #FFf;
+    left: 60rem;
+    margin-right: 10rem;
+    margin-top: -5rem;
+}
  img {
     width: 60rem;
     height: 20rem;

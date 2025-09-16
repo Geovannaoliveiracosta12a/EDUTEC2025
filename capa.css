@@ -39,7 +39,9 @@
   
   }
 
- 
+ .alinhamento {
+  margin-left: 20rem;
+ }
   header {
     display: flex;
     align-items: center;
@@ -62,7 +64,7 @@ img {
 .about-img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 4rem;
-    margin-left: 40rem;
+    margin-left: 32rem;
     margin-top: -5rem;
 }
 
@@ -92,27 +94,6 @@ ul li a{
     text-align: center;
     font-size: 1.5rem;
     
-}
-
-ul li ul.dropdown li{
-    display: block;
-    background: var(--highlight-purple-opacity);
-}
-
-ul li ul.dropdown{
-    width: 100%;
-    position: absolute;
-    z-index: 999;
-    display: none;
-}
-
-ul li a:hover{
-    color: #FEC800;
-    transition: .3s;
-}
-
-ul li:hover ul.dropdown{
-    display: block;
 }
 
 
@@ -149,7 +130,7 @@ ul li:hover ul.dropdown{
   
     font-size: 2rem;
   
-    font-family: "Montserrat", sans-serif;
+    font-family: "Oswald", sans-serif;
   
     font-weight: 600;
   
@@ -164,10 +145,12 @@ ul li:hover ul.dropdown{
   .h1 {
   
     font-size: 3rem;
-  
-    font-family: "Oswald", sans-serif;
-  
-    font-weight: 400;
+
+   font-family: "Montserrat", sans-serif;
+    
+    font-weight: bold;
+
+    margin-bottom: 0.4rem;
   
   }
   

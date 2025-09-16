@@ -62,12 +62,16 @@ img {
 
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.logo img {
+  width: 10rem;
+
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
 .about-img {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 4rem;

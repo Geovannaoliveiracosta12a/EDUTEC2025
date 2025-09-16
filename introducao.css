@@ -150,14 +150,16 @@ ul li:hover ul.dropdown{
 
     color: #FFFFFF;
 
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
-    text-align: center;
+    text-align: left;
 
     line-height: 1.2;
 
     margin-top: 4rem ;
 
     margin-left: 0.5rem;
+
+    font-weight: bold; 
 
   }
