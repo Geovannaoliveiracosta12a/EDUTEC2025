@@ -16,7 +16,7 @@ btnNao.addEventListener("click", () => {
 
 // Botão SIM → redireciona
 btnSim.addEventListener("click", () => {
-  window.location.href = "../capa.html"; // ajuste o link
+  window.location.href = "./homeJogo.html"; // ajuste o link
 });
 
 // Fechar clicando fora do conteúdo
