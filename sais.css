@@ -24,39 +24,39 @@
   }
   
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 4rem;
-    background-color: transparent;
-}
-
-.logo img {
-    width: 10rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo à esquerda, menu no meio, about-us à direita */
+  padding: 1rem 2rem;  /* diminui o espaço lateral */
+  background-color: transparent;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  margin-right: auto; /* força a logo a colar no canto esquerdo */
+}
+
+.logo img {
+  width: 10rem;   /* tamanho fixo */
+  height: auto;
+  display: block;
+}
+.about {
+  margin-right: auto; /* joga pro canto direito */
+  display: flex;
+  align-items: center;
 }
 
 .about-img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 4rem;
-    margin-left: 40rem;
-    margin-top: -5rem;
-}
-
-.about{
-    margin-top: -1rem;
+  width: 4rem; /* tamanho fixo do ícone */
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-img:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
+
 
 ul{
     list-style-type: none;
