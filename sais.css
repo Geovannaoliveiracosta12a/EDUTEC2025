@@ -46,11 +46,11 @@ header {
 
 .about-img {
   position: relative;  /* para left funcionar */
-  left: 59rem;
+  left: 35rem;
   width: 4rem;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  top: -3em;
+  top: -1.5em;
  
 }
 
@@ -66,24 +66,24 @@ ul{
 ul li{
     display: inline-block;
     position: relative;
-    left: 38rem;
-    top: 1rem;
-}
-
-ul li a{
-    display: block;
-    padding: 1.25rem 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
     
 }
+
+ul li a {
+  position: relative;
+  left: 14rem;
+  padding: 1rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  top: 1rem;
+}
+
+
 
 ul li ul.dropdown li{
     display: block;
-    background: var(--highlight-purple-opacity);
-    
+    background:  #4a2073;
 }
 
 ul li ul.dropdown{
@@ -91,18 +91,17 @@ ul li ul.dropdown{
     position: absolute;
     z-index: 999;
     display: none;
-    
 }
 
 ul li a:hover{
     color: #FEC800;
     transition: .3s;
-    
 }
 
 ul li:hover ul.dropdown{
     display: block;
 }
+
 
   
   
