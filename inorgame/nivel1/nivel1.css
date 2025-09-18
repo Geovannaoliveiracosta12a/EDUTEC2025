@@ -204,11 +204,11 @@ header {
 }
 /* ================== COMPOSTOS & CATEGORIAS ================== */
 h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0;
     text-align: center;
-    font-family: 'Montsserrat';
-    margin-top: 5rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
 }
 
 .compostos {
