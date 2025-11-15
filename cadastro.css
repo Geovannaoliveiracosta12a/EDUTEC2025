@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'monteserrat', sans-serif;
+}
+
+:root {
+    --dark-purple: #0D0614;
+    --medium-purple: #2C1344;
+    --normal-purple: #4A2073;
+    --highlight-purple: #522780;
+    --highlight-purple-opacity: rgba(84, 41, 130, 0.5);
+    --light-purle: #C9BCD8;
+    --yellow: #FEC800;
+}
+
+body {
+    background: linear-gradient(to bottom, #4A2073, #2C1344, #0D0614);
+    min-height: 100vh;
+    color: white;
+    line-height: 1.6;
+}
+
+/* ====================== HEADER ====================== */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1rem 4rem;
+    background-color: transparent;
+}
+
+.logo img {
+    width: 10rem;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header ul li {
+    position: relative;
+}
+
+header ul li a {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+header ul li a:hover {
+    color: var(--yellow);
+    transition: .3s;
+}
+
+/* DROPDOWN */
+header ul li ul.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background: var(--highlight-purple-opacity);
+    width: max-content;
+}
+
+header ul li ul.dropdown li {
+    display: block;
+}
+
+header ul li:hover ul.dropdown {
+    display: block;
+}
+
+/* ÍCONE */
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about-img {
+    width: 4rem;
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* ====================== FORMULÁRIO ====================== */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5rem; 
+}
+
+.container {
+    width: 600px;
+    padding: 20px;            /* REDUZido → diminui ALTURA TOTAL */
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* TÍTULO menor e com menos margem */
+.container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;      /* REDUZido */
+    font-size: 1.9rem;        /* REDUZido */
+}
+
+/* CAMPOS */
+.cadastro {
+    margin-bottom: 18px;      /* REDUZido */
+}
+
+.cadastro label {
+    color: #d8b6ff;
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.cadastro input {
+    width: 100%;
+    height: 45px;             /* REDUZ ALTURA do input */
+    padding: 0 15px;
+
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 50px;
+
+    font-size: 1rem;
+    color: white;
+    outline: none;
+    transition: 0.2s;
+}
+
+.cadastro input::placeholder {
+    color: rgba(255,255,255,0.6);
+}
+
+/* FOCUS */
+.cadastro input:focus {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 8px #b379ff;   /* MENOR */
+}
+
+/* BOTÃO */
+.btn {
+    width: 100%;
+    height: 45px;             /* REDUZ ALTURA */
+    border-radius: 50px;
+    border: none;
+
+    background: #ffc400;
+    color: #4b1c78;
+
+    font-size: 1.1rem;        /* menor */
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #ffdd55;
+}
