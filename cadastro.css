@@ -170,13 +170,14 @@ header ul li:hover ul.dropdown {
     border-radius: 50px;
     border: none;
 
-    background: #ffc400;
+    background: var(--yellow);
     color: #4b1c78;
 
     font-size: 1.1rem;        /* menor */
     font-weight: bold;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.5s;
+    margin-top: 3rem;
 }
 
 .btn:hover {
