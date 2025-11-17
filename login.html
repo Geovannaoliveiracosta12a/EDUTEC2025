@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+               <img src="./pages/logo.qi.png" alt="logo inorga">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="./introducao.html">Introdução</a></li>
+            <li><a href="./video-aulas.html">Video-aulas</a></li>
+            <li><a href="./inorgame/homeJogos.html">Jogos</a></li>
+
+            <li class="dropdown-parent">
+                <a href="#">Conteúdo</a>
+                <ul class="dropdown">
+                    <li><a href="./acidos.html">Ácidos</a></li>
+                    <li><a href="./bases.html">Bases</a></li>
+                    <li><a href="./sais.html">Sais</a></li>
+                    <li><a href="./oxidos.html">Óxidos</a></li>
+                    <li><a href="./bal.html">Bal.</a></li>
+                </ul>
+            </li>
+
+            <li><a href="./cadastro.html">Cadastre-se</a></li>
+        </ul>
+
+        <div class="about">
+            <a href="./sobre-nos.html">
+                <img src="./pages/boneco.icone.png" alt="Sobre nós" class="about-img">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+
+         <form>
+
+        <h1>Bem-vindo</h1>
+        <p>Entre na sua conta</p>
+
+        <!-- CAMPO EMAIL -->
+        <label class="input-group">
+            <i class="fa-regular fa-user"></i>
+            <input type="email" placeholder="UserName@gmail.com">
+        </label>
+        <br><br>
+
+        <!-- CAMPO SENHA -->
+        <label class="input-group">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Senha">
+        </label>
+
+        <div class="extra-options">
+            <a href="#">Esqueceu a sua senha?</a>
+
+            <label class="checkbox-area">
+                <input type="checkbox">
+                Salvar senha.
+            </label>
+        </div>
+
+        <button type="submit">Entrar</button>
+
+    </form>
+
+</body>
+</html>
+ 
