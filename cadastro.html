@@ -1,79 +1,98 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="cadastro.css">
-    <title>Cadastre-se</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="./cadastro.js" defer></script>
 </head>
 
 <body>
-<header>
-    <div class="logo">
-        <a href="./index.html">
-            <img src="./images/logo.png" alt="logo inorga">
-        </a>
-    </div>
 
-    <ul>
-        <li><a href="./introducao.html">Introdução</a></li>
-        <li><a href="./video-aulas.html">Video-aulas</a></li>
-        <li><a href="./inorgame/homeJogos.html">Jogos</a></li>
+      <header>
+        <div class="logo">
+            <a href="./index.html">
+               <img src="./images/logo.png" alt="logo inorga">
+            </a>
+        </div>
 
-        <li>
-            <a href="#">Conteúdo</a>
-            <ul class="dropdown">
-                <li><a href="./acidos.html">Ácidos</a></li>
-                <li><a href="./bases.html">Bases</a></li>
-                <li><a href="./sais.html">Sais</a></li>
-                <li><a href="./oxidos.html">Óxidos</a></li>
-                <li><a href="./bal.html">Bal.</a></li>
-            </ul>
-        </li>
+        <ul class="nav-links">
+            <li><a href="./introducao.html">Introdução</a></li>
+            <li><a href="./video-aulas.html">Video-aulas</a></li>
+            <li><a href="./inorgame/homeJogos.html">Jogos</a></li>
 
-        <!-- Novo item -->
-        <li><a href="./cadastro.html">Cadastre-se</a></li>
-    </ul>
+            <li class="dropdown-parent">
+                <a href="#">Conteúdo</a>''
+                <ul class="dropdown">
+                    <li><a href="./acidos.html">Ácidos</a></li>
+                    <li><a href="./bases.html">Bases</a></li>
+                    <li><a href="./sais.html">Sais</a></li>
+                    <li><a href="./oxidos.html">Óxidos</a></li>
+                    <li><a href="./bal.html">Bal.</a></li>
+                </ul>
+            </li>
 
-    <div class="about">
-        <a href="./sobre-nos.html">
-            <img src="./images/about us.png" alt="Sobre nós" class="about-img">
-        </a>
-    </div>
-</header>
+            <li><a href="./cadastro.html">Cadastre-se</a></li>
+        </ul>
 
-<div class="container">
-    <h2>Cadastro</h2>
+        <div class="about">
+            <a href="./sobre-nos.html">
+                <img src="./images/about us.png" alt="Sobre nós" class="about-img">
+            </a>
+        </div>
+    </header>
 
-    <div class="cadastro">
-        <label for="Username">Nome:</label>
-        <input type="text" id="Username" placeholder="Digite seu nome...">
-    </div>
+    <div class="container">
 
-    <div class="cadastro">
-        <label for="number">Telefone:</label>
-        <input type="number" id="number" placeholder="Digite Telefone...">
-    </div>
-
-    <div class="cadastro">
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" placeholder="Digite seu E-mail...">
-    </div>
-
-    <div class="cadastro">
-        <label for="password">Senha:</label>
-        <input type="password" id="password" placeholder="Digite sua senha...">
-
-        <button class="btn">Enviar</button>
-
-    </div>
+        <div class="input-box">
+    <span class="icon">
+        <!-- ícone de usuário -->
+    </span>
+    <input id="name" type="text" placeholder="Digite seu Nome">
+    <div class="end"></div>
 </div>
+
+<div class="input-box">
+    <span class="icon">
+        <!-- ícone de email -->
+    </span>
+    <input id="email" type="email" placeholder="SeuEmail@gmail.com">
+    <div class="end"></div>
+</div>
+
+<div class="input-box">
+    <span class="icon">
+        <!-- ícone de idade -->
+    </span>
+    <input id="age" type="number" placeholder="Sua idade">
+    <div class="end"></div>
+</div>
+
+<div class="input-box">
+    <span class="icon">
+        <!-- ícone de nickname -->
+    </span>
+    <input id="nickname" type="text" placeholder="Digite seu nickname">
+    <div class="end"></div>
+</div>
+
+<div class="input-box">
+    <span class="icon">
+        <!-- ícone de senha -->
+    </span>
+    <input id="password" type="password" placeholder="*************">
+    <div class="end"></div>
+</div>
+
+<button class="btn">Cadastrar</button>
+
+<main>
+    
+</main>
+
 </body>
+
 </html>
-
-

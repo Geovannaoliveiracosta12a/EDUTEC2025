@@ -1,28 +1,15 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'monteserrat', sans-serif;
-}
-
-:root {
-    --dark-purple: #0D0614;
-    --medium-purple: #2C1344;
-    --normal-purple: #4A2073;
-    --highlight-purple: #522780;
-    --highlight-purple-opacity: rgba(84, 41, 130, 0.5);
-    --light-purle: #C9BCD8;
-    --yellow: #FEC800;
+    font-family: sans-serif;
 }
 
 body {
-    background: linear-gradient(to bottom, #4A2073, #2C1344, #0D0614);
+    width: 100%;
     min-height: 100vh;
-    color: white;
-    line-height: 1.6;
+    background: linear-gradient(to bottom, #3b036a, #2b0047);
 }
-
-/* ====================== HEADER ====================== */
 
 header {
     display: flex;
@@ -34,6 +21,8 @@ header {
 
 .logo img {
     width: 10rem;
+    position: relative;
+    top: 6px;
 }
 
 header ul {
@@ -63,12 +52,16 @@ header ul li a:hover {
 
 /* DROPDOWN */
 header ul li ul.dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    background: var(--highlight-purple-opacity);
-    width: max-content;
+  position: absolute;
+  top: calc(100% - 12px); 
+  left: 0;
+  display: none;
+  background: rgba(74, 32, 115, 0.98); 
+  padding: 10px 0;
+  border-radius: 6px;
+  min-width: 140px;   
+  z-index: 9999;    
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 header ul li ul.dropdown li {
@@ -79,7 +72,6 @@ header ul li:hover ul.dropdown {
     display: block;
 }
 
-/* ÍCONE */
 .about {
     display: flex;
     align-items: center;
@@ -95,91 +87,64 @@ header ul li:hover ul.dropdown {
     cursor: pointer;
 }
 
-/* ====================== FORMULÁRIO ====================== */
-
-.form-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 5rem; 
-}
-
 .container {
-    width: 600px;
-    padding: 20px;            /* REDUZido → diminui ALTURA TOTAL */
-    border-radius: 25px;
-
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
-
-    margin-left: auto;
-    margin-right: auto;
+    width: 60%;
+    margin: 120px auto 0 auto; 
 }
 
-/* TÍTULO menor e com menos margem */
-.container h2 {
-    color: white;
-    text-align: center;
-    margin-bottom: 20px;      /* REDUZido */
-    font-size: 1.9rem;        /* REDUZido */
-}
 
-/* CAMPOS */
-.cadastro {
-    margin-bottom: 18px;      /* REDUZido */
-}
-
-.cadastro label {
-    color: #d8b6ff;
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-    display: block;
-}
-
-.cadastro input {
+.input-box {
     width: 100%;
-    height: 45px;             /* REDUZ ALTURA do input */
-    padding: 0 15px;
+    height: 55px;
+    background: #d0c4d9;
+    border-radius: 40px;
+    margin: 22px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
 
-    background: rgba(255, 255, 255, 0.25);
+.icon {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.7;
+}
+
+.input-box input {
+    width: 75%;
+    margin-left: 12px;
     border: none;
-    border-radius: 50px;
-
-    font-size: 1rem;
-    color: white;
     outline: none;
-    transition: 0.2s;
+    font-size: 16px;
+    background: transparent;
 }
 
-.cadastro input::placeholder {
-    color: rgba(255,255,255,0.6);
+.input-box .end {
+    width: 25%;
+    height: 100%;
+    background: #1b0033;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
 }
 
-/* FOCUS */
-.cadastro input:focus {
-    background: rgba(255, 255, 255, 0.35);
-    box-shadow: 0 0 8px #b379ff;   /* MENOR */
-}
-
-/* BOTÃO */
 .btn {
-    width: 100%;
-    height: 45px;             /* REDUZ ALTURA */
-    border-radius: 50px;
+    width: 110px;
+    height: 36px;
+    background: #ffc400;
     border: none;
-
-    background: var(--yellow);
-    color: #4b1c78;
-
-    font-size: 1.1rem;        /* menor */
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 17px;
     font-weight: bold;
+    margin-top: 25px;
     cursor: pointer;
-    transition: 0.5s;
-    margin-top: 3rem;
-}
-
-.btn:hover {
-    background: #ffdd55;
+    position: relative;
+    left: calc(100% - 110px);
 }
