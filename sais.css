@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    background: linear-gradient(to bottom, #4a2073, #2c1344, #0d0614);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* logo à esquerda, menu no meio, about-us à direita */
+  padding: 1rem 2rem;  /* diminui o espaço lateral */
+  background-color: transparent;
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;   
+  left: 4rem;
+}
+
+.logo img {
+  width: 10rem;   
+  height: auto;
+  right: 40rem;
+
+}
+
+.about-img {
+  position: relative;  /* para left funcionar */
+  left: 35rem;
+  width: 4rem;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  top: -1.5em;
+ 
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+    
+}
+
+ul li a {
+  position: relative;
+  left: 14rem;
+  padding: 1rem 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  top: 1rem;
+}
+
+
+
+ul li ul.dropdown li{
+    display: block;
+    background:  #4a2073;
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    color: #FEC800;
+    transition: .3s;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+  
+  
+  .h1 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 46rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+  
+  
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  
+  p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .destaque {
+    color: #FEC800;
+  }
+  
+  
+  /* Bloco amarelo */
+  .amarela {
+    background-color: #F2BD33;
+    border-radius: 1rem;
+    height: 3rem;
+    width: 24rem;
+    text-align: center;
+    line-height: 3rem;
+    margin: 0 auto;
+  }
+  
+  
+  /* Tabela */
+  .tabela {
+    width: 40rem;
+    height: 30rem;
+    border: 2rem solid #81689b;
+    border-radius: 1rem;
+    background-color: #81689b;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+  /* Borda roxa */
+  .borda_roxa {
+    padding: 0.1rem 0.2rem;
+    background: #4a2073;
+    border-radius: 2.5rem;
+    border: 2.5rem solid #F2BD33;
+    width: 50rem;
+    height: 24rem;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+button {
+    background-color: #F2BD33;
+    
+    color: #000;
+    
+    border: none;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+  
+    margin: 2rem;
+
+    width: 8rem;
+    color: #FFf;
+    left: 60rem;
+    margin-right: 10rem;
+    margin-top: -5rem;
+}
+ img {
+    width: 60rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+ }
+
+ .alinhamento {
+  text-align: left;
+  color: #FFFFFF;
+ }
+
+ .borda_cinza {
+    background-color: #646464b2;
+    margin-bottom: 1rem;
+ }
+
+  h1, h2, h3, h4, h5, h6,
+  p, .padrao2, .padrao3, .texto-h2 {
+    text-align: center;
+  }
+  

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./nivel2/nivel2.css">
+  <title>INORGAME</title>
+</head>
+<body>
+  <header>
+    <img src="./assets/logo clara (1).png" id="logo" alt="logo">
+  </header>
+
+ <!-- Popup da logo -->
+<div id="popup-logo" class="popup">
+  <div class="popup-content">
+    <h2>Deseja realmente sair?</h2>
+    <img src="./assets/bixinho-popup.png" alt="" class="bixin">
+    <div class="botoesLogo">
+      <button id="btnLogoSim">SIM</button>
+      <button id="btnLogoNao">NÃO</button>
+    </div>
+  </div>
+</div>
+
+
+  <img src="./assets/pergunta 2 (2).png" alt="nivel2" id="nivel2">
+  <h1>Missão: Descubra o Nome dos Compostos!</h1>
+
+  <!-- Bixinho -->
+  <div id="bixinho-triste" class="bixinho" style="display: none;"></div>
+
+<!-- Popup Explicação Bixinho -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span id="fecharPopup" class="fechar">&times;</span>
+      <div class="popup-header">
+        <h2 class="h2-bixin">Explicação</h2>
+        <img src="./assets/bixinho-popup.png" alt="" class="bixin-popup">
+      </div>
+      <p class="popup-text">Essa informação está errada!</p>
+    </div>
+  </div>
+
+ <!-- Container principal para compostos e categorias lado a lado -->
+<div class="jogo-container">
+  <div class="compostos" id="compostos">
+    <div class="composto" draggable="true" data-tipo="ácido">HCl</div>
+    <div class="composto" draggable="true" data-tipo="sal">NaCl</div>
+    <div class="composto" draggable="true" data-tipo="óxido">CO2</div>
+    <div class="composto" draggable="true" data-tipo="base">Mg(OH)2</div>
+</div>
+
+  <div class="categorias">
+    <div class="categorias2">
+      <div class="categoria" data-tipo="ácido">Ácido clorídrico</div>
+      <div class="categoria" data-tipo="base">Hidróxido de magnésio</div>
+    </div>
+    <div class="categorias3">
+      <div class="categoria" data-tipo="sal">Cloreto de sódio</div>
+      <div class="categoria" data-tipo="óxido">Dióxido de carbono</div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Barra de progresso -->
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+
+  <!-- Popup final -->
+  <div id="popup-final" class="popupF">
+    <canvas id="fireworksCanvas"></canvas>
+    <div class="popup-caixa">
+      <div class="estrela"><img src="./assets/a.png" alt=""></div>
+      <p id="mensagem-final">Parabéns! Você concluiu o segundo nível</p>
+      <p id="mensagem-final2">Deseja continuar jogando?</p>
+      <div class="botoes">
+        <button id="btnNao">NÃO</button>
+        <button id="btnSim">SIM</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Popup de Erro -->
+  <div id="popup-erro" class="popup">
+    <div class="popup-caixa">
+      <div class="estrela"><img src="./assets/ChatGPT Image 7 de set. de 2025, 21_25_13.png" alt="estrela branca"></div>
+      <p id="mensagem-erro">Poxa! Não foi dessa vez... Tente novamente!</p>
+      <p id="mensagem-erro2">Deseja tentar novamente?</p>
+      <div class="botoes">
+        <button id="btnErroSim">SIM</button>
+        <button id="btnErroNao">NÃO</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./nivel2/nivel2.js"></script>
+</body>
+</html>

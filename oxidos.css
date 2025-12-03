@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, #4a2073, #2c1344, #0d0614);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+ 
+  
+  display: flex;
+ 
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  background-color: transparent;
+}
+
+.logo img {
+  width: 10rem;
+
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 4rem;
+  margin-left: 40rem;
+  margin-top: -5rem;
+}
+
+.about{
+  margin-top: -1rem;
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+ul{
+  list-style-type: none;
+}
+
+ul li{
+  display: inline-block;
+  position: relative;
+}
+
+ul li a{
+  display: block;
+  padding: 1.25rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5rem;
+ margin-bottom: 2rem;
+ 
+}
+
+ul li ul.dropdown li{
+  display: block;
+  background: rgba(84, 41, 130, 0.5);
+}
+
+ul li ul.dropdown{
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li a:hover{
+  color: #FFC700;
+  transition: .3s;
+}
+
+ul li:hover ul.dropdown{
+  display: block;
+}
+.h1 {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  margin-right: 46rem;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 2rem;
+  margin-top: 5rem;
+  
+}
+
+.paragrafos{
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.texto-h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  max-width: 100%;
+  text-align: left;
+}
+
+.compostos-binarios{
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  gap: 1rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  margin-left: 32rem;
+}
+
+.amarelo {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFC700;
+  font-size: 2rem;
+ margin-top: 1rem;
+  text-align: center;
+}
+.alinhamento{
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+/* Tabela */
+.tabela {
+  width: 45rem;
+  height: 30rem;
+  border: 2rem solid #81689b;
+  border-radius: 1rem;
+  background-color: #81689b;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img{
+  width: 50rem;
+  margin: 3rem auto;
+  height: auto;
+}
+
+
+.btn-duvidas {
+  background-color: #FFC700;
+  color: #31174D;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: block;
+  margin: 3rem auto;
+}
+
+.btn-duvidas:hover {
+  transform: scale(1.05);
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #31174D;
+  color: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  border: 1rem solid #FFC700;
+  text-align: center;
+}
+
+.popup.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #FFC700;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.popup p {
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* Botão fechar */
+.popup .close-btn {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: none;
+  border: 2px solid #FFC700;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  color: #FFC700;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+}
+
+/* Ícone seta */
+#seta {
+  width: 2rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.botao {
+    background-color: #F2BD33;
+    
+    color: #000;
+    
+    border: none;
+    padding: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+  
+    margin: 2rem;
+
+    width: 8rem;
+    color: #FFf;
+    left: 8rem;
+    margin-right: 10rem;
+    margin-top: -5rem;
+}
+
+h1, h2, h3,
+p, .texto-h2 {
+  text-align: center;
+}

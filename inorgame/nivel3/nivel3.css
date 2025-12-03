@@ -1,0 +1,714 @@
+/* ================= Corpo e header ================= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #3e1a66, #000000 80%);
+    color: #fff;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Estrelas no fundo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+    animation: moveStars 50s linear infinite;
+}
+
+/* Animação das estrelas */
+@keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 1000px; }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+}
+
+#logo {
+    font-size: 40px;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+
+/* === Popup da logo === */
+#popup-logo {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+
+    
+}
+
+#popup-logo .popup-content {
+    background: linear-gradient(180deg, #6F4A8E, #45285d);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.4);
+    animation: scaleIn 0.3s ease;
+    
+}
+
+#popup-logo h2 {
+    font-size: 2rem;
+    color: #FEC800;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-family: 'Montsserrat';
+}
+
+#popup-logo .bixin {
+    max-height: 140px;
+    width: auto;
+    margin: 1rem auto;
+    display: block;
+}
+
+.botoesLogo {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.botoesLogo button {
+    height: 3rem;
+    width: 8rem;
+    max-width: 90%;
+    cursor: pointer;
+    background: linear-gradient(90deg, #F2BD33, #e1a81f);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.625rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.375rem 0.75rem rgba(0,0,0,0.25);
+}
+
+.botoesLogo button:hover {
+    transform: translateY(-0.2rem) scale(1.05);
+    background: linear-gradient(90deg, #FFD84A, #F2BD33);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.35);
+}
+
+/* ================= Texto e imagens ================= */
+/* Texto principal */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.popup-text{
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-family: Arial, sans-serif;
+}
+
+.popup h2{
+    font-size: 2rem;
+    font-family: 'Montserrat';
+}
+
+.popup p{
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= Compostos ================= */
+.compostos {
+    display: flex;
+    justify-content: center;
+    gap: 103px;
+    flex-wrap: wrap;
+}
+
+.composto {
+    background: #652d90;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 2rem;
+    cursor: grab;
+    user-select: none;
+    color: #ffcc00;
+    margin-top: 3rem;
+    max-width: 183px;
+    width: 20%;
+}
+
+.categoria[data-tipo="óxido"] .composto {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 160px;
+}
+
+/* Categoria Composto + H₂O */
+.categoria[data-tipo="óxido"] {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    gap: 15px;               
+    height: auto;            
+}
+
+/* Compostos dentro da categoria óxido */
+.categoria[data-tipo="óxido"] .composto {
+    width: 80%;              
+    max-width: 180px;
+    margin: 0;
+    text-align: center;
+}
+
+/* ================= Categorias ================= */
+.categorias {
+    display: flex;
+    justify-content: center;
+    gap: 101px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+.categoria {
+    background: #c8b6d9;
+    color: #2b0c46;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 2rem;
+    max-width: 30rem;
+    width: 20%;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.4s;
+    margin-top: 0;
+}
+
+.categoria h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    color: #2b0c46;
+    font-weight: bold;
+}
+
+.categoria.over {
+    outline: 2px dashed #ffcc00;
+}
+
+.categoria.correto {
+    background: #28a745 !important;
+    color: #fff;
+}
+
+.categoria.errado {
+    background: #dc3545 !important;
+    color: #fff;
+}
+
+/* ================= Barra de progresso ================= */
+.progress-bar {
+    width: 90%;
+    height: 50px;
+    max-width: 100%;
+    margin: 50px auto 0 auto;
+    background: #4b1972;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: #ffcc00;
+    transition: width 0.3s;
+}
+
+/* ================= Bixinho ================= */
+.bixinho {
+    position: absolute;
+    top: 150px;
+    left: 40rem;
+    width: 120px;
+    transition: opacity 0.10s;
+    display: none;
+}
+
+.bixinho img {
+    width: 100%;
+}
+
+/* ================= Popups gerais ================= */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* ================= Popups individuais dos compostos ================= */
+.popup[id^="popup-"] {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.popup[id^="popup-"] .popup-caixa {
+    max-width: 500px;
+    width: 90%;
+    height: auto;
+    background: #6F4A8E;
+    color: #ffcc00;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+}
+
+.popup[id^="popup-"] .h2-bixin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.popup[id^="popup-"] .popup-caixa img {
+    max-width: 80px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.popup[id^="popup-"] p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.popup[id^="popup-"] .fechar {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+.popup[id^="popup-"] .fechar:hover{
+    color: #FEC800;
+    transition: 0.2s; 
+}
+
+/* ================= Botões dos popups ================= */
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.botoes button {
+    background: #522780;
+    border: none;
+    color: #F2BD33;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 20rem;
+    transition: 0.2s;
+    height: 4rem;
+}
+
+.botoes button:hover {
+    opacity: 0.85;
+}
+
+/* ================= Canvas Fogos ================= */
+#fireworksCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* ================= Responsividade ================= */
+@media (max-width: 1600px) {
+    #popup-temporario .popup-5s,
+    #popup-final .popup-caixa,
+    #popup-erro .popup-caixa {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #mensagem-final, #mensagem-final2,
+    #mensagem-erro, #mensagem-erro2 {
+        font-size: 28px;
+    }
+
+    .botoes {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .botoes button {
+        max-width: 150px;
+        max-height: 60px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .popup[id^="popup-"] .popup-caixa {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup[id^="popup-"] .h2-bixin {
+        font-size: 24px;
+    }
+
+    .popup[id^="popup-"] p {
+        font-size: 16px;
+    }
+
+    .popup[id^="popup-"] .popup-caixa img {
+        width: 60px;
+    }
+}
+
+/* ================= Popup Final ================= */
+#popup-final {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(255,255,255,0.05), rgba(0,0,0,0.85));
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease;
+}
+
+#popup-final::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.15;
+    animation: moveStars 60s linear infinite;
+    pointer-events: none;
+}
+
+#popup-final .popup-caixa {
+    background: linear-gradient(135deg, #FFCC00, #FF6F61);
+    color: #fff;
+    padding: 50px 40px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 650px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7), 0 0 50px rgba(255,255,255,0.3) inset;
+    animation: scaleIn 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border: 2px solid #fff;
+}
+
+/* Título do popup */
+#popup-final #mensagem-final {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: 800;
+    color: #2b0c46;
+    margin: 0;
+    
+}
+
+/* Texto do popup */
+#popup-final #mensagem-final2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: #2b0c46;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Mascote do popup */
+#popup-final .estrela {
+    width: 120rem;      /* aumentando ainda mais */
+    max-width: 100%;    /* não ultrapassa o contêiner */
+    height: auto;
+    display: block;
+    margin: 0 auto;     /* centraliza horizontalmente */
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+
+/* ================= Botões Finais - iguais ao popup da logo ================= */
+/* ================= Botões Finais Roxos - tamanho aumentado ================= */
+#popup-final .botoes-final {
+    display: flex;
+    gap: 5rem;
+    margin-top: 2rem;
+    width: 20rem; /* aumentei um pouco */
+    height: 60px;     /* aumentei um pouco */
+}
+
+#popup-final .botoes-final button {
+    width: 100%;
+    cursor: pointer;
+    background: linear-gradient(90deg, #7B3FBF, #4B1972);
+    color: white;
+    font-size: 20px;  /* um pouco maior */
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+#popup-final .botoes-final button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(90deg, #8C4ED1, #5C2C8C);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+}
+
+
+
+/* ================= Animações ================= */
+@keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+@keyframes girar {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes scaleIn {
+    from { transform: scale(0.6); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* ================= Popup Temporário ================= */
+#popup-temporario .popup-5s {
+    background: linear-gradient(135deg, #ffcc00, #ff6f61);
+    color: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: left;
+    max-width: 600px;
+    width: 90%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    position: relative;
+    overflow: hidden;
+    animation: scaleIn 0.4s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Estrela popup temporário */
+#popup-temporario .estrela1 img {
+    width: 2rem;
+    height: auto;
+    animation: girar 6s linear infinite;
+    position: relative;
+    transform-origin: center;
+}
+
+/* ================= Popup de Erro ================= */
+/* ================= Popup de Erro - Paleta Coerente ================= */
+#popup-erro {
+    display: none;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(99, 33, 123, 0.05), rgba(0,0,0,0.85));
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    overflow: hidden;
+    animation: fadeIn 0.5s ease;
+}
+
+#popup-erro::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; 
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.15;
+    animation: moveStars 60s linear infinite;
+    pointer-events: none;
+}
+
+#popup-erro .popup-caixa {
+    background: linear-gradient(135deg, #6F4A8E, #45285d); /* roxo/lilás do site */
+    color: #ffcc00; /* amarelo chamativo para o texto */
+    padding: 50px 40px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+   
+    animation: scaleIn 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    border: 0.3rem solid #ffcc00;
+}
+
+/* Título do popup de erro */
+#popup-erro #mensagem-erro {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: 800;
+    color: #FEC800; /* amarelo para destaque */
+    margin: 0;
+}
+
+/* Texto do popup de erro */
+#popup-erro #mensagem-erro2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.6rem;
+    color: #fff;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Mascote do popup de erro */
+#popup-erro .radioativo {
+    width: 60rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+/* ================= Botões do popup de erro - iguais aos da logo ================= */
+
+#popup-erro .botoes button {
+    width: 100%;
+    cursor: pointer;
+    background: linear-gradient(90deg, #F2BD33, #e1a81f); /* degradê amarelo */
+    color: white; /* texto branco */
+    font-size: 18px; /* mesmo tamanho dos da logo */
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+#popup-erro .botoes button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(90deg, #FFD84A, #F2BD33); /* hover amarelo */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+}
+
+/* ================= Botões do popup de erro lado a lado ================= */
+#popup-erro .botoes {
+    display: flex;           /* flex container */
+    justify-content: center; /* centraliza horizontalmente */
+    gap: 20px;               /* espaço entre os botões */
+    margin-top: 2rem;
+}
+
+#popup-erro .botoes button {
+    
+    width: auto;             /* largura automática para caber lado a lado */
+    padding: 12px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #F2BD33, #e1a81f); /* degradê amarelo */
+    color: white; /* texto branco */
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+#popup-erro .botoes button:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(90deg, #FFD84A, #F2BD33); /* hover amarelo */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.35);
+}
+
