@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nível 1</title>
+    <link rel="stylesheet" href="./capaQuiz.css" />
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="logo-container">
+
+            <!-- LOGO INORGA -->
+            <img src="./assets/logo clara (1).png" alt="Logo Inorga" class="logo" />
+
+            <!-- Popup da logo -->
+            <div id="popup-logo" class="popup">
+                <div class="popup-content">
+                    <h2>Deseja voltar para o menu?</h2>
+                    <img src="./assets/bixinho-popup.png" alt="" class="bixin" />
+                    <div class="botoesLogo">
+                        <button id="btnLogoSim"><a href="./homeJogos.html">SIM</a></button>
+                        <button id="btnLogoNao">NÃO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <img src="./assets/pergunta 2 (4).png" class="ino" />
+
+        <a href="./quizNorga.html">
+            <button class="btn-regras">
+                <span>Jogar</span>
+            </button>
+        </a>
+
+        <button id="abrirPopup">Regras</button>
+
+        <!-- POPUP REGRAS -->
+        <div id="popup" class="popup">
+            <div class="popup-conteudo">
+                <span class="fechar" id="fecharPopup">&times;</span>
+                <h2>Regras</h2>
+                <p>
+                    Cada pergunta vale 1 ponto.
+                </p>
+                <p>
+                    Ao errar, o jogador vê uma explicação mostrando por que a resposta estava incorreta.
+                </p>
+                <p>
+                   Tempo por pergunta: 10 segundos.
+
+                        -Se o jogador não responder dentro do tempo, a pergunta é considerada não respondida.
+                        -O quiz automaticamente passa para a próxima questão.
+                </p>
+                <p>
+                    Perguntas não respondidas (por tempo esgotado) são mostradas no final, para que o jogador possa revisar.
+                </p>
+                <p>
+                    A pontuação final é calculada pelo total de acertos.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="./capaQuiz.js"></script>
+</body>
+</html>
+
