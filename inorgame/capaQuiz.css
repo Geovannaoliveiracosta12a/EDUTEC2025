@@ -9,6 +9,62 @@ body {
     overflow-x: hidden;
 }
 
+.about-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 4rem;
+    margin-left: 40rem;
+    margin-top: -5rem;
+}
+
+.about{
+    margin-top: -1rem;
+}
+
+.about-img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    display: inline-block;
+    position: relative;
+}
+
+ul li a{
+    display: block;
+    padding: 1.25rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    
+}
+
+ul li ul.dropdown li{
+    display: block;
+    background: var(--highlight-purple-opacity);
+}
+
+ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    color: var(--yellow);
+    transition: .3s;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
+
 /* Estrelas no fundo */
 body::before {
     content: "";
